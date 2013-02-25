@@ -1,0 +1,8 @@
+class-2993
+==========
+
+Android Internals in Building R
+
+== Links ==
+
+* http://mrkn.co/f/595[Eclipse Intro video]
