@@ -9,6 +9,9 @@ public class FibLib {
 		return fibJ(n-1)+fibJ(n-2);
 	}
 	
+	static {
+		System.loadLibrary("FibNative");
+	}
 	/** Native recursive Fibonacci */
 	public static native long fibN(long n);
 }
