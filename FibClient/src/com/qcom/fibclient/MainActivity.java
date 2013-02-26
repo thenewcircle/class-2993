@@ -23,6 +23,12 @@ public class MainActivity extends Activity {
 
 		fibManager = new FibManager(this);
 	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		fibManager = null;
+	}
 
 	public void onClick(View v) {
 		long n = Long.parseLong(textN.getText().toString());

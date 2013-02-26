@@ -13,9 +13,9 @@ public class FibManager {
 
 	public FibManager(Context context) {
 		this.context = context;
-		boolean bind = context.bindService(
-				new Intent("com.qcom.fibcommon.IFibService"),
-				connection, Context.BIND_AUTO_CREATE);
+		boolean bind = context.bindService(new Intent(
+				"com.qcom.fibcommon.IFibService"), connection,
+				Context.BIND_AUTO_CREATE);
 	}
 
 	@Override
@@ -35,9 +35,12 @@ public class FibManager {
 			fibService = null;
 		}
 	};
-	
+
 	// --- Proxy calls ---
 	public long fibJ(long n) {
+		if (fibService == null) {
+			return -1;
+		}
 		try {
 			return fibService.fibJ(n);
 		} catch (RemoteException e) {
@@ -47,6 +50,9 @@ public class FibManager {
 	}
 
 	public long fibN(long n) {
+		if (fibService == null) {
+			return -1;
+		}
 		try {
 			return fibService.fibN(n);
 		} catch (RemoteException e) {
