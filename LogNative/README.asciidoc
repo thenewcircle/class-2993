@@ -1,0 +1,15 @@
+= LogNative
+
+This is a repository of a simple Android application, used as a basis 
+for a lab on Android Native Development Kit (NDK).
+
+See http://marakana.com/training/android/ for more info
+
+== The Lab
+
+. Expand on ++com.marakana.android.lognative.LogLib++ and add support for a ++native++ version of the ++logJ(int, String, String)++ method. Call this method ++logN++.
+
+. Update ++com.marakana.android.lognative.LogActivity.onClick(View)++ method to use your new ++LogLib.logN(int, String, String)++ method.
+
+. Test.
+ 
