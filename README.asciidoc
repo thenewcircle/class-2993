@@ -3,6 +3,28 @@ class-2993
 
 Android Internals in Building R
 
+== Day 1 ==
+
+* Lecture: Stack Overview
+* Lecture: NDK
+* Demo: FibonacciNative, C and C++ version
+* Lab: LogNative
+
+
+== Day 2 ==
+
+* Review: Android Overview
+* Review: LogNative
+* Lecture: Binder IPC
+* Demo: FibonacciBinder, primitives
+* Lab: LogBinder, primitives
+* Demo: FibonacciBinder, parcel
+* Lab: LogBinder, parcel
+* Demo: FibonacciBinder, async
+* Lab: LogBinder, async
+
+
+
 == Links ==
 
 * http://mrkn.co/f/595[Eclipse Intro video]
