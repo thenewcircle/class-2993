@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
 	protected void onDestroy() {
 		super.onDestroy();
 		fibManager = null;
-		handler = null;
 	}
 
 	private static final int MSG_ID = 42;
