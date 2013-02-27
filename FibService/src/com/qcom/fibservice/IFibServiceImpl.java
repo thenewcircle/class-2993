@@ -3,6 +3,7 @@ package com.qcom.fibservice;
 import android.os.RemoteException;
 
 import com.qcom.fibcommon.FibRequest;
+import com.qcom.fibcommon.IFibListener;
 import com.qcom.fibcommon.IFibService;
 
 public class IFibServiceImpl extends IFibService.Stub {
@@ -27,6 +28,13 @@ public class IFibServiceImpl extends IFibService.Stub {
 		default:
 			return -1;
 		}
+	}
+
+	@Override
+	public void asyncFib(FibRequest request, IFibListener listener)
+			throws RemoteException {
+		long result = fib(request);	// this could take a while!
+		listener.onResponse(result);
 	}
 
 }
