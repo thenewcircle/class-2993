@@ -39,6 +39,12 @@ Android Internals in Building R
 * Lab: LightsService diagram
 * Lecture: Android Tools and Debugging
 
+== Parking Lot ==
+
+* Unit Testing
+* Functional Testing
+
+
 == Links ==
 
 * http://mrkn.co/f/595[Eclipse Intro video]
