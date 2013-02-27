@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.qcom.logcommon.LogManager;
+import com.qcom.logcommon.LogMessage;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private static final String TAG = "LogActivity";
@@ -84,10 +85,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		try {
 			switch (this.type.getCheckedRadioButtonId()) {
 			case R.id.type_log_j:
-				logManager.log(priority, tag, msg);
+				logManager.logger( new LogMessage(priority, tag, msg));
 				break;
 			case R.id.type_log_n:
-				logManager.log(priority, tag, msg);
+				logManager.logger( new LogMessage(priority, tag, msg));
 				break;
 			default:
 				return;
