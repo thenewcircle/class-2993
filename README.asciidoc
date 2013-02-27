@@ -20,10 +20,24 @@ Android Internals in Building R
 * Lab: LogBinder, primitives
 * Demo: FibonacciBinder, parcel
 * Lab: LogBinder, parcel
+
+== Day 3 ==
+
 * Demo: FibonacciBinder, async
 * Lab: LogBinder, async
-
-
+* Lecture: Security Essentials
+* Demo: Implement static permissions in Fib Client/Service
+* Lab: Implement static permissions in Log Client/Service
+// Lunch
+* Demo: Dynamic permissions
+* Lab: Implement dynamic permissions in Log Client/Service
+* Lecture: Building Android From Source
+* Homework: Download Marabuntu, make the image
+* Lecture: Android Startup
+* Demo: Vibrator
+* Lecture: Android Subsystems
+* Lab: LightsService diagram
+* Lecture: Android Tools and Debugging
 
 == Links ==
 
