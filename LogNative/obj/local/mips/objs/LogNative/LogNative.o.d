@@ -1,7 +1,7 @@
-obj/local/mips/objs/LogNative/LogNative.o: jni/LogNative.c \
- jni/com_marakana_android_lognative_LogLib.h \
- /Users/marko/tools/ndk/platforms/android-14/arch-mips/usr/include/jni.h
+obj/local/mips/objs/LogNative/LogNative.o: jni/LogNative.cpp \
+ /Users/marko/tools/android-ndk-r8b/platforms/android-14/arch-mips/usr/include/jni.h \
+ /Users/marko/tools/android-ndk-r8b/platforms/android-14/arch-mips/usr/include/android/log.h
 
-jni/com_marakana_android_lognative_LogLib.h:
+/Users/marko/tools/android-ndk-r8b/platforms/android-14/arch-mips/usr/include/jni.h:
 
-/Users/marko/tools/ndk/platforms/android-14/arch-mips/usr/include/jni.h:
+/Users/marko/tools/android-ndk-r8b/platforms/android-14/arch-mips/usr/include/android/log.h:

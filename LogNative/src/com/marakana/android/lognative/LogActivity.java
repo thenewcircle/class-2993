@@ -66,7 +66,7 @@ public class LogActivity extends Activity implements OnClickListener {
             }
         }
     }
-
+ 
     private void log(int priority, String tag, String msg) {
         try {
             switch (this.type.getCheckedRadioButtonId()) {

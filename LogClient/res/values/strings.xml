@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">This application allows you to log to Android\'s system logging facility. Enjoy!</string>
+    <string name="app_name">Log Native</string>
+    <string name="logJ">Java</string>
+    <string name="logN">Native</string>
+    <string name="log_button">Log</string>
+    <string name="log_tag_errors">Oh-oh. You have not filled out both the tag and the message. Are you sure you wish to proceeed?</string>
+    <string name="log_tag_hint">Your log entry tag</string>
+    <string name="log_msg_hint">Your log entry message</string>
+    <string name="log_success">Logged your message</string>
+    <string name="log_error">Failed to log your message</string>
+
+    <string-array name="log_level_labels">
+        <item>Verbose</item>
+        <item>Debug</item>
+        <item>Info</item>
+        <item>Warning</item>
+        <item>Error</item>
+    </string-array>
+
+</resources>
