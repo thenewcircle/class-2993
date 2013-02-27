@@ -13,9 +13,8 @@ public class FibManager {
 
 	public FibManager(Context context) {
 		this.context = context;
-		boolean bind = context.bindService(new Intent(
-				"com.qcom.fibcommon.IFibService"), connection,
-				Context.BIND_AUTO_CREATE);
+		context.bindService(new Intent("com.qcom.fibcommon.IFibService"),
+				connection, Context.BIND_AUTO_CREATE);
 	}
 
 	@Override
@@ -38,6 +37,11 @@ public class FibManager {
 
 	// --- Proxy calls ---
 	public long fibJ(long n) {
+		// Enforce permission
+		context.enforceCallingOrSelfPermission(
+				"com.qcom.permission.FIB_SERVICE_SLOW",
+				"You don't got com.qcom.permission.FIB_SERVICE_SLOW permission!!!");
+
 		if (fibService == null) {
 			return -1;
 		}
@@ -62,6 +66,14 @@ public class FibManager {
 	}
 
 	public long fib(FibRequest request) {
+		if (request.getAlgorithm() == FibRequest.JAVA) {
+			// Enforce permission
+			context.enforceCallingOrSelfPermission(
+					"com.qcom.permission.FIB_SERVICE_SLOW",
+					"You don't got com.qcom.permission.FIB_SERVICE_SLOW permission!!!");
+
+		}
+
 		if (fibService == null) {
 			return -1;
 		}
@@ -72,8 +84,15 @@ public class FibManager {
 			return -1;
 		}
 	}
-	
+
 	public void asyncFib(FibRequest request, IFibListener listener) {
+		if (request.getAlgorithm() == FibRequest.JAVA) {
+			// Enforce permission
+			context.enforceCallingOrSelfPermission(
+					"com.qcom.permission.FIB_SERVICE_SLOW",
+					"You don't got com.qcom.permission.FIB_SERVICE_SLOW permission!!!");
+
+		}
 		if (fibService == null) {
 			return;
 		}
@@ -83,7 +102,5 @@ public class FibManager {
 			e.printStackTrace();
 		}
 	}
-
-
 
 }

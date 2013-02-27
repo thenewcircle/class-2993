@@ -88,13 +88,13 @@ public class MainActivity extends Activity implements OnClickListener {
 				logManager.logger( new LogMessage(priority, tag, msg));
 				break;
 			case R.id.type_log_n:
-				logManager.logger( new LogMessage(priority, tag, msg));
+				logManager.log( priority, tag, msg);
 				break;
 			default:
 				return;
 			}
-			this.tag.getText().clear();
-			this.msg.getText().clear();
+//			this.tag.getText().clear();
+//			this.msg.getText().clear();
 			Toast.makeText(this, R.string.log_success, Toast.LENGTH_SHORT)
 					.show();
 		} catch (RuntimeException e) {
