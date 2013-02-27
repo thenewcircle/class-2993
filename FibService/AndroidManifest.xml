@@ -10,6 +10,10 @@
     <permission
         android:name="com.qcom.permission.FIB_SERVICE"
         android:protectionLevel="signature" />
+    
+    <permission 
+        android:name="com.qcom.permission.FIB_SERVICE_SLOW"
+        android:protectionLevel="signature" />
 
     <application
         android:allowBackup="true"
