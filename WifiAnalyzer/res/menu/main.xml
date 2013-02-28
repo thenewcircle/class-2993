@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item_scan" android:title="Scan"></item>
+    <item android:id="@+id/item_configured_networks" android:title="Print Configured Networks"></item>
+    <item android:id="@+id/item_clear" android:title="Clear"></item>
+
+</menu>
