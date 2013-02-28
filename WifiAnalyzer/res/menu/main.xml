@@ -2,5 +2,6 @@
     <item android:id="@+id/item_scan" android:title="Scan"></item>
     <item android:id="@+id/item_configured_networks" android:title="Print Configured Networks"></item>
     <item android:id="@+id/item_clear" android:title="Clear"></item>
+    <item android:id="@+id/item_discover_peers" android:title="Discover Peers"></item>
 
 </menu>
